@@ -1,10 +1,9 @@
-package com.example.neweranotetaker;
-
-import android.content.Intent;
-import android.os.Bundle;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void findViews(){
+
         EditUsername = findViewById(R.id.edit_username);
         EditPassword = findViewById(R.id.edit_password);
         btnLogin = findViewById(R.id.btn_login);
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (inputUsername.equals(username) && inputPassword.equals(password)){
                     Toast.makeText(MainActivity.this,"Login Succesfully",Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(MainActivity.this, HomeActivity.class);
+                    Intent i = new Intent(MainActivity.this, com.example.neweranotetaker.HomeActivity.class);
                     startActivity(i);
                     finish();
                 }else{
@@ -47,8 +47,5 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-
-
-
     }
 }

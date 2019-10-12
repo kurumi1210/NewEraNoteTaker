@@ -1,15 +1,8 @@
-package com.example.neweranotetaker;
-
-import android.os.Bundle;
-
-import com.example.myapplication.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
-import android.view.View;
+import android.os.Bundle;
 
 public class AddNoteActivity extends AppCompatActivity {
 
@@ -17,7 +10,5 @@ public class AddNoteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
-
     }
-
 }
